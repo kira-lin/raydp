@@ -31,7 +31,7 @@ jobs:
         python-version: 3.7
     - name: Build wheel
       env:
-        RAYDP_PACKAGE_NAME: raydp-nightly
+        RAYDP_PACKAGE_NAME: raydp_nightly
       run: pip install wheel && ./build.sh
     - name: Upload
       uses: pypa/gh-action-pypi-publish@master
